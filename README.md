@@ -51,6 +51,6 @@ This is a personal project made for Ryan Higa's birthday and stream, so contribu
   Made for fun and educational purposes by Crocross on Twitch/Discord
   
   [![GitHub stars](https://img.shields.io/github/stars/crocross/RyanHiga2025?style=for-the-badge&color=4ade80&labelColor=1a1a1a)](https://github.com/crocross/RyanHiga2025/stargazers)
-  [![GitHub forks](https://img.shields.io/github/forks/crocross/RyanHiga2025?style=for-the-badge&color=4ade80&labelColor=1a1a1a)](https://github.com/crocross/RyanHiga2025/network)
+  [![GitHub forks](https://img.shields.io/github/forks/crocross/RyanHiga2025?style=for-the-badge&color=4ade80&labelColor=1a1a1a)](https://github.com/crocross/RyanHiga2025/forks)
   
 </div>
