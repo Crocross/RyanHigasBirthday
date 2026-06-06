@@ -7,17 +7,17 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/level.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
 	<title>Ryan Higa</title>
 </head>
 
 <body>
 	<div class="header">
-		<h1>Ryan Higa - 2025</h1>
+		<button id="global-home-btn" class="link-button global-home-btn hidden">Home</button>
+
+		<h1 id="main-title">Ryan Higa's Birthday</h1>
 	</div>
 
 	<div id="birthdayLock" class="birthday-lock">
@@ -28,134 +28,18 @@
 		</div>
 	</div>
 
-	<div id="gameContainer" class="game-container">
-		<div id="board" class="board"></div>
-
-		<div class="keyboard">
-			<div class="keyboard-row">
-				<button class="key" data-key="Q">Q</button>
-				<button class="key" data-key="W">W</button>
-				<button class="key" data-key="E">E</button>
-				<button class="key" data-key="R">R</button>
-				<button class="key" data-key="T">T</button>
-				<button class="key" data-key="Y">Y</button>
-				<button class="key" data-key="U">U</button>
-				<button class="key" data-key="I">I</button>
-				<button class="key" data-key="O">O</button>
-				<button class="key" data-key="P">P</button>
-			</div>
-			<div class="keyboard-row">
-				<button class="key" data-key="A">A</button>
-				<button class="key" data-key="S">S</button>
-				<button class="key" data-key="D">D</button>
-				<button class="key" data-key="F">F</button>
-				<button class="key" data-key="G">G</button>
-				<button class="key" data-key="H">H</button>
-				<button class="key" data-key="J">J</button>
-				<button class="key" data-key="K">K</button>
-				<button class="key" data-key="L">L</button>
-			</div>
-			<div class="keyboard-row">
-				<button class="key wide" data-key="ENTER">ENTER</button>
-				<button class="key" data-key="Z">Z</button>
-				<button class="key" data-key="X">X</button>
-				<button class="key" data-key="C">C</button>
-				<button class="key" data-key="V">V</button>
-				<button class="key" data-key="B">B</button>
-				<button class="key" data-key="N">N</button>
-				<button class="key" data-key="M">M</button>
-				<button class="key wide" data-key="BACKSPACE">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24"
-						width="20" class="game-icon" data-testid="icon-backspace">
-						<path fill="white"
-							d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z">
-						</path>
-					</svg>
-				</button>
-			</div>
-		</div>
-
-		<div id="retryContainer" class="retry-container" style="display: none;">
-			<div id="gameOverText" class="game-over-text"></div>
-			<button class="retry-btn" onclick="resetGame()">Try Again</button>
-		</div>
-	</div>
-
-	<div id="levelUpContainer" class="level-up-container">
-		<img src="https://c.tenor.com/0pmPIX08hQUAAAAC/tenor.gif"/>
-		<img src="img/congratsOnLvl.png"/>
-		<div>Many lovely lamps wanted to share different things with you:</div>
-		<ul>
-			<li><a href="https://magma.com/d/8GhDDwyX9IyrJUgdKXOI5h" target="_blank" class="link-button">Messages from lamps 1</a></li>
-			<li><a href="https://magma.com/d/rV7Tk5KeaEMPMsyymuc0-B" target="_blank" class="link-button">Messages from lamps 2</a></li>
-			<li><a href="https://cdn.discordapp.com/attachments/712859030179151944/1380445182012559391/xxxv.png?ex=6843e742&is=684295c2&hm=efcb07a0c90dd9ecb846a4d0d90f16294dc6d4f2f06ee832d726082f9273dcd7&" target="_blank" class="link-button">Artwork by espinerd02</a></li>
-			<li><a href="https://cdn.discordapp.com/attachments/712859030179151944/1380581217891647541/Happybirth.png?ex=684465f4&is=68431474&hm=607c42265104d793bda34b5ac8fd25bf84465705fa8d3647171cf1b64a999b0c&" target="_blank" class="link-button">Artwork by Kiri</a></li>
-			<li>
-				<button class="btn btn-toggle" type="button" data-bs-toggle="collapse" data-bs-theme="dark" data-bs-target="#arabellaConnections" aria-expanded="true">Connections by Arabella</button>
-				<div id="arabellaConnections" class="collapse show checkbox-group-select-all">
-					<ul>
-						<li><a href="https://connections.swellgarfo.com/game/-ORriVClqvSQvT9yDNF5" target="_blank" class="link-button">Puzzle 1</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-ORs2avY0HieDFZXCxRz" target="_blank" class="link-button">Puzzle 2</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-ORva7s6z-g_1pmI1Uzz" target="_blank" class="link-button">Puzzle 3</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-ORver7k_EQAtvm8o8Ri" target="_blank" class="link-button">Puzzle 4</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-ORvPdXqnS5DrhIQJlH_" target="_blank" class="link-button">Puzzle 5</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-OS3waugfKibuqJYqcbr" target="_blank" class="link-button">Puzzle 6</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-ORwmsa4JixKXJX9HfDm" target="_blank" class="link-button">Puzzle 7</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-OSQTl-nMyzdsl83Dfdw" target="_blank" class="link-button">Puzzle 8</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-ORwP9I9RKY-eyIot3lg" target="_blank" class="link-button">Puzzle 9</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-OS0N8e1xOL2XS4ic7ZN" target="_blank" class="link-button">Puzzle 10</a></li>
-						<li><a href="https://connections.swellgarfo.com/game/-OS4DIyGCtbud220Lexx" target="_blank" class="link-button">Puzzle 11</a></li>
-					</ul>
-				</div>
-			</li>
-			<!-- Carousel / Modal will not be used
-			<li>
-				<div id="artworkCarousel" class="carousel slide carousel-container">
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="..." class="w-100" data-bs-toggle="modal" data-bs-target="#artworkModal"/>
-								<div class="carousel-caption d-none d-md-block">
-									<h5>First slide label</h5>
-								</div>
-						</div>
-						<div class="carousel-item">
-							<img src="..." class="w-100" data-bs-toggle="modal" data-bs-target="#artworkModal"/>
-							<div class="carousel-caption d-none d-md-block">
-								<h5>Second slide label</h5>
-							</div>
-						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#artworkCarousel" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#artworkCarousel" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
-
-				
-				<div class="modal fade" id="artworkModal" tabindex="-1" aria-labelledby="artworkModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<button type="button" class="btn-close btn-close-modal" data-bs-theme="dark" data-bs-dismiss="modal" aria-label="Close"></button>
-							<div class="modal-body">
-								<img id="modalImage" src="" alt="Full Size Image" class="modal-image">
-							</div>
-						</div>
-					</div>
-				</div>
-			</li>
-			-->
-		</ul>
-	</div>
+	<div id="yearContainer" class="hidden"></div>
 
 	<div id="message" class="message"></div>
 
-	<script src="js/level.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
-		integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+	<div id="year-navigation" class="year-navigation">
+        <button class="link-button" data-year="2025">2025</button>
+        <span class="nav-dot">•</span>
+        <button class="link-button" data-year="2026">2026</button>
+    </div>
+
+	<script type="module" src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
 </script>
 </body>
 

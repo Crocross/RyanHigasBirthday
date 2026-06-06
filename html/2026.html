@@ -1,0 +1,87 @@
+<div id="gameContainer" class="game-container hidden">
+	<div class="header">
+		<div class="spurs-logo">
+			<img src="assets/2026/SpursIcon.png" alt="San Antonio Spurs Small Logo">
+		</div>
+
+		<div>
+			<h1 class="hoop-shots-title">HOOP SHOTS <span>San Antonio Spurs Edition</span></h1>
+		</div>
+
+		<div class="spurs-logo">
+			<img src="assets/2026/SpursIcon.png" alt="San Antonio Spurs Small Logo">
+		</div>
+	</div>
+
+	<div class="hud">
+		<div class="hud-item">
+			<div class="hud-label">Score</div>
+			<div class="hud-val" id="v-score">0</div>
+		</div>
+		<div class="hud-item">
+			<div class="hud-label">Balls Left</div>
+			<div class="hud-val" id="v-balls">10</div>
+		</div>
+		<div class="hud-item">
+			<div class="hud-label">Distance</div>
+			<div class="hud-val" id="v-dist">—</div>
+		</div>
+	</div>
+
+	<div class="arena" id="arena">
+		<div class="wall-bg"></div>
+		<div id="arena-watermark">
+			<img src="assets/2026/SpursLogo.png" alt="San Antonio Spurs Logo">
+		</div>
+		<div class="scoreboard-banner">AT&amp;T CENTER · SAN ANTONIO</div>
+		<div id="court-floor"></div>
+
+		<div id="hoop-wrap">
+			<object id="hoop-svg" type="image/svg+xml" data="assets/2026/hoop.svg"></object>
+		</div>
+
+		<canvas id="arrow-canvas"></canvas>
+		<div id="shoot-zone">
+			<div class="ball-glow"></div>
+			<div id="current-ball">🏀</div>
+		</div>
+		<div id="fly-ball">🏀</div>
+		<div id="power-wrap">
+			<div id="power-label">PWR</div>
+			<div id="power-bar-bg">
+				<div id="power-bar-fill"></div>
+			</div>
+		</div>
+		<div id="ball-queue"></div>
+		<div id="flash"></div>
+		<div id="msg"></div>
+
+		<div id="gameover">
+			<div id="go-logo" style="width:64px;height:64px;">
+				<img src="assets/2026/hoop.svg" alt="Spurs Emblem" style="width:100%; height:100%;">
+			</div>
+			<h2 id="go-title">FINAL BUZZER</h2>
+			<div class="go-div"></div>
+			<div class="go-score" id="final-score">0 / 10</div>
+			<div class="go-quip" id="final-quip"></div>
+			<a id="go-cta" class="go-cta" href="#">-</a>
+		</div>
+	</div>
+
+	<div class="controls">
+		<button id="reset-btn" class="solid-button">↺ &nbsp;RESET</button>
+		<div id="hint">Drag ball back &amp; release — aim for the hoop</div>
+		<button id="skip-btn" class="solid-button">→ &nbsp;Skip</button>
+	</div>
+</div>
+
+<div id="levelUpContainer" class="level-up-container hidden">
+	<img src="https://c.tenor.com/0pmPIX08hQUAAAAC/tenor.gif" />
+	<img src="assets/2025/congratsOnLvl.png" />
+	<div>Many lovely lamps wanted to share different things with you:</div>
+	<ul>
+		<li><a href="assets/2026/espinerd.png" target="_blank" class="link-button">Artwork by espinerd02</a></li>
+		<li><a href="assets/2026/sammyrrahh.png" target="_blank" class="link-button">Artwork by sammyrrahh</a></li>
+		<li><a href="assets/2026/KiriWIP.png" target="_blank" class="link-button">Artwork by Kiri (WIP)</a></li>
+	</ul>
+</div>

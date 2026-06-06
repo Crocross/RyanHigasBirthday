@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: #121213;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+/* Position your link-styled home button in the top-left */
+.global-home-btn {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    z-index: 2000; /* Keeps it on top of games and overlays */
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #3a3a3c;
+	padding-bottom: 20px;
+	width: 100%;
+	max-width: 500px;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
+}
+
+.message {
+	position: fixed;
+	top: 100px;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 16px 24px;
+	border-radius: 4px;
+	font-weight: bold;
+	transform: translateY(-100px);
+	opacity: 0;
+	transition: all 0.3s ease;
+	z-index: 1000;
+}
+
+.message.show {
+	transform: translateY(0);
+	animation: fadeOut 2s forwards;
+}
+
+.birthday-lock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 60vh;
+	text-align: center;
+}
+
+.big-number {
+	font-size: 16rem;
+	font-weight: bold;
+	color: #538d4e;
+	margin-bottom: 10px;
+	line-height: 1;
+}
+
+.birthday-text {
+	font-size: 1.5rem;
+	color: #b59f3b;
+	margin-bottom: 20px;
+}
+
+.lock-message {
+	font-size: 0.8rem;
+	color: #818384;
+	max-width: 400px;
+	line-height: 1.5;
+}
+
+.solid-button {
+	font-family: 'Oswald', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 600;
+	letter-spacing: 0.18em;
+	padding: .45rem 1.6rem;
+	border: 1px solid #444;
+	background: transparent;
+	color: var(--silver);
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all .18s;
+	text-transform: uppercase;
+}
+
+.solid-button:hover {
+	background-color: darkgreen;
+	/* Change color on hover */
+}
+
+.link-button {
+	background: none;
+	/* Remove background color */
+	border: none;
+	/* Remove border */
+	color: green;
+	/* Set text color to blue (typical link color) */
+	text-decoration: underline;
+	/* Add underline */
+	cursor: pointer;
+	/* Change cursor to pointer on hover */
+	padding: 0;
+	/* Remove padding */
+	font: inherit;
+	/* Inherit font styles */
+}
+
+.link-button:hover {
+	color: darkgreen;
+	/* Change color on hover */
+}
+
+.link-button:focus {
+	outline: none;
+	/* Remove focus outline */
+}
+
+.btn-toggle {
+	display: inline-flex;
+	align-items: center;
+	padding: .25rem .5rem;
+	color: var(--bs-body-color);
+	background-color: transparent;
+	border: 0;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.flex {
+	display: flex !important;
+}
+
+#yearContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.level-up-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.btn-toggle {
+	display: inline-flex;
+	align-items: center;
+	padding: .25rem .5rem;
+	color: var(--bs-body-color);
+	background-color: transparent;
+	border: 0;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+	color: var(--bs-emphasis-color);
+	background-color: var(--bs-tertiary-bg);
+}
+
+.btn-toggle::before {
+	width: 1.25em;
+	line-height: 0;
+	content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ccc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+	transition: transform .35s ease;
+	transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+	color: var(--bs-emphasis-color);
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+	transform: rotate(90deg);
+}
+
