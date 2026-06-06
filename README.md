@@ -23,7 +23,7 @@ This project was a fun way to display creations from the lamp community to Ryan 
 
 ## Installation
 
-No installation is required. Simply visit the [live site](https://crocross.github.io/RyanHiga2025/) to view it.
+No installation is required. Simply visit the [live site](https://crocross.github.io/RyanHigasBirthday/) to view it.
 <details>
   <summary>Click to reveal wordle solution</summary>
   LEVEL
