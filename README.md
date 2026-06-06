@@ -1,6 +1,6 @@
 <div align="center">
 
-# Ryan Higa Birthday Site
+# Ryan Higa's Birthday Site
 
 [![Platform](https://img.shields.io/badge/Platform-Web-blue?style=for-the-badge&logo=internet-explorer&logoColor=white)](https://crocross.github.io/RyanHiga2025/)
 [![Version](https://img.shields.io/badge/Version-1.0.0-4ade80?style=for-the-badge&logo=semanticrelease&logoColor=white)](https://github.com/crocross/RyanHiga2025/releases)
