@@ -33,7 +33,7 @@ If you’d like to host it yourself:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/crocross/RyanHiga2025.git
+   git clone https://github.com/crocross/RyanHigasBirthday.git
    ```
 2. Navigate into the cloned folder and open `index.html` in any modern web browser.
 
