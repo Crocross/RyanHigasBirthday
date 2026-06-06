@@ -204,6 +204,11 @@ document.getElementById('global-home-btn').addEventListener('click', () => {
 		hideContainer(homeBtn);
 	}
 
+	const mainTitle = document.getElementById('main-title');
+    if (mainTitle) {
+        mainTitle.textContent = "Ryan Higa's Birthday";
+    }
+
     // Clear out your year view wrapper injection target completely
     const yearContainer = document.getElementById('yearContainer');
     if (yearContainer) {
